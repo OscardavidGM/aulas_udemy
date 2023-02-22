@@ -1,0 +1,41 @@
+"""
+Considerando duas listas de inteiros ou floats (lista A e lista B)
+Some os valores nas listas retornando uma nova lista com os valores somados:
+Se uma lista for maior que a outra, a soma só vai considerar o tamanho da
+menor.
+Exemplo:
+lista_a     = [1, 2, 3, 4, 5, 6, 7]
+lista_b     = [1, 2, 3, 4]
+=================== resultado
+lista_soma  = [2, 4, 6, 8]
+"""
+from itertools import zip_longest
+
+lista_a = [1, 2, 3, 4, 5, 6, 7]
+lista_b = [1, 2, 3, 4]
+
+def newList(l1, l2):
+    lista3 = [a + b for a, b in zip_longest(l1, l2, fillvalue= 0)]
+    return lista3
+    
+l3 = newList(lista_a, lista_b)
+print(l3)
+# lista3 = [sum(b) for a, b in enumerate(list(zip(lista_a, lista_b)))]
+
+# print(lista3)
+
+# listaX = list(zip(lista_a, lista_b))
+
+# for i, e in enumerate(listaX):
+#     listaX[i] = sum(e)
+
+# print(listaX)
+    
+# print(listaX)
+
+# lista_c = lista_b.copy()
+# for x in range(len(lista_b)):
+#     lista_c[x] = lista_a[x] + lista_b[x]
+
+# print(lista_c)
+
