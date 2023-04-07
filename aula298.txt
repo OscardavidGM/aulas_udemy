@@ -1,0 +1,8 @@
+"""
+Hola, $nome.
+
+Tu tienes $valor, en la fecha $data, em la empresa $empresa con el telefono
+$telefone.
+
+Gracias, atentamente ${empresa}, abraços
+"""

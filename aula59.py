@@ -1,22 +1,17 @@
 
-"""""
-condicion = True
+from pathlib import Path
 
-while condicion:
-    nombre = input("Digite su nombre: ")
-    print(f"Su nombre es {nombre}")
+camino_proyecto = Path()
+print(camino_proyecto.absolute())
 
-    if nombre == "salir":
-        break
+camino_archivo = Path(__file__)
+print(camino_archivo)
 
-print("Acabó!")    
-"""
+ideas = camino_archivo.parent / 'ideas'
+# print(ideas / 'archivo.txt')
 
-suma = 0
-
-while suma <= 20:
-    print(suma)
-    suma = suma + 1
-
-print("Acabó!")
-
+archivo = Path.home() / 'Desktop' / 'archivo.txt'
+archivo.touch()
+print(archivo)
+archivo.write_text('Hola')
+print(archivo.read_text())

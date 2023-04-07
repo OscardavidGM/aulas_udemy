@@ -1,13 +1,18 @@
-nome = "Diveana"
-sobrenome = "Fletes"
-idade = 28
-ano_nascimento = 2022 - idade
-maior_de_idade = idade >= 18
-altura_metros = 1.64
+from dataclasses import dataclass
+from typing import Tuple
 
-print("Nome:", nome)
-print("Sobrenome:", sobrenome)
-print("Idade:", idade)
-print("Ano de nascimento", ano_nascimento)
-print("E maior de idade?:", maior_de_idade)
-print("Altura em metros: ", altura_metros)
+
+@dataclass
+class Pais:
+    nombre: str
+    capital: str
+    habitantes: int
+    coordenadas: tuple
+
+    # def __repr__(self):
+    #     return (f'Esta es un {self.__class__.__name__} llamado {self.nombre}')
+
+
+pais = Pais('Venezuela', 'Caracas', 3000000, (5.1632955 - 69.4146705))
+print(pais)
+# print(f'{pais.capital} es la capital de {pais.nombre} y cuenta con {pais.habitantes} de habitantes')

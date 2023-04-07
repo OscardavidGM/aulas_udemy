@@ -1,0 +1,8 @@
+error: Deu ruim logFileMixin
+sucess: Otimo logFileMixin
+error: Xiaomi Red Mi Note 9 est· desligado Smartphone
+sucess: Potecito est· ligado Smartphone
+error: Xiaomi Red Mi Note 9 est· desligado Smartphone
+sucess: Potecito est· ligado Smartphone
+error: Xiaomi Red Mi Note 9 est√° desligado Smartphone
+sucess: Potecito est√° ligado Smartphone

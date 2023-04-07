@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 4rem;
+    color: #fff;
+    background-color: #333;
+}
+
+/* Estilos de Servicios */
+#services {
+    background-color: #f7f7f7;
+    padding: 60px;
+}
+
+#services h2 {
+    text-align: center;
+}
+
+#services ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#services li {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,20 @@
+class Fact:
+
+    def __init__(self, name, age_tamarindo):
+        self.name = name
+        self.age_tamarindo = age_tamarindo
+
+    @classmethod
+    def more_than_50(cls, name):
+        return cls(name, 50)
+
+    @property
+    def age(self):
+        return self.age_tamarindo
+
+
+p1 = Fact("Diveana", 28)
+p2 = Fact.more_than_50('Maria')
+
+print(p1.age)
+print(p2.age, p2.name)
